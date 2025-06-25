@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import CustomSwiperSlide from "./SwiperSlide";
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
         height={50}
         className="w-[434px] h-[200px] object-fill"
       />
-
+      <CustomSwiperSlide />
       <Image
         src={"/show.svg"}
         alt="Logo"

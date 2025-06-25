@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <div className=" sticky top-0 left-0 w-full z-20 bg-red-400  ">
+    <div className=" sticky top-0 left-0 w-full z-20 bg-white  ">
       <div className="px-10 py-4 flex justify-between items-center">
         <div className=" h-10 w-10 bg-gray-300 rounded-full flex items-center justify-center">
           <Image
@@ -15,13 +16,16 @@ const Navbar = () => {
             className="h-[20px] w-[20px]"
           />
         </div>
-        <Image
-          height={50}
-          width={100}
-          src={"/logo.png"}
-          className=" h-[40px] w-[80px]"
-          alt="Logo"
-        />
+        <Link href={"/"}>
+          {" "}
+          <Image
+            height={50}
+            width={100}
+            src={"/logo.png"}
+            className=" h-[40px] w-[80px]"
+            alt="Logo"
+          />
+        </Link>
         <div className=" flex items-center gap-3">
           <div className=" h-10 w-10 bg-gray-300 rounded-full flex items-center justify-center">
             <Image
